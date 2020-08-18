@@ -1,0 +1,12 @@
+package com.Patterns.Observer2;
+
+/**
+ * Suppose we are building a cricket app that notifies viewers about the information such as current score,
+ * run rate etc. Suppose we have made two display elements CurrentScoreDisplay and AverageScoreDisplay.
+ * CricketData has all the data (runs, bowls etc.) and whenever data changes the display elements are
+ * notified with new data and they display the latest data accordingly
+ */
+public interface Observer {
+
+    public void update(int runs, int wickets, float overs);
+}
